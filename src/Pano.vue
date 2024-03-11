@@ -84,7 +84,6 @@ export default {
       }
     },
     loadPano() {
-      _log('this.source = ' + this.source);
       if (!this.source) return;
 
       let pano;
