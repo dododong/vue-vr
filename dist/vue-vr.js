@@ -56315,7 +56315,6 @@ type StyleObjectPart = {
             loadScene: function loadScene() {
               var _this2 = this;
 
-              _log("this.pano = " + this.pano);
               if (!this.pano) return;
 
               var source = this.pano.source;
@@ -56745,7 +56744,6 @@ type StyleObjectPart = {
               var _this2 = this;
 
               this.$emit("on-load-start");
-              _log("this.scenes = " + this.scenes);
               if (!this.scenes || this.scenes.length === 0) return;
 
               if (this.scene_index === index) return;
@@ -56795,10 +56793,7 @@ type StyleObjectPart = {
               this.panorama.parent.rotation.set(0, Math.PI, 0);
               this.viewer.panorama.position.set(scene.x, scene.y, scene.z);
 
-              this.viewer.control.target = this.viewer.panorama.position;
-
-              _log(this.viewer);
-              _log("panorama = ", this.panorama);
+              this.viewer.control.target = this.viewer.panor
 
               if (this.arrowGroup) {
                 this.viewer.remove(this.arrowGroup);
