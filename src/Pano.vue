@@ -84,6 +84,7 @@ export default {
       }
     },
     loadPano() {
+      if (this.source === '') return;
       let pano;
       switch (this.type) {
         case 'cube':
